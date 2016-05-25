@@ -16,6 +16,7 @@
 		DA201B6C1CEBE49500E7BD94 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA201B6B1CEBE49500E7BD94 /* ProfileViewController.swift */; };
 		DA3A69951CEE8777001D2F4C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A69941CEE8777001D2F4C /* User.swift */; };
 		DA3A69971CEE88DB001D2F4C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A69961CEE88DB001D2F4C /* Post.swift */; };
+		DA3A69991CF51E9C001D2F4C /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A69981CF51E9C001D2F4C /* FeedTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		DA201B6B1CEBE49500E7BD94 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		DA3A69941CEE8777001D2F4C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DA3A69961CEE88DB001D2F4C /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		DA3A69981CF51E9C001D2F4C /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				DA201B6B1CEBE49500E7BD94 /* ProfileViewController.swift */,
 				DA3A69941CEE8777001D2F4C /* User.swift */,
 				DA3A69961CEE88DB001D2F4C /* Post.swift */,
+				DA3A69981CF51E9C001D2F4C /* FeedTableViewController.swift */,
 				DA201B521CE542D600E7BD94 /* Assets.xcassets */,
 				DA201B541CE542D600E7BD94 /* LaunchScreen.storyboard */,
 				DA201B571CE542D600E7BD94 /* Info.plist */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA3A69951CEE8777001D2F4C /* User.swift in Sources */,
+				DA3A69991CF51E9C001D2F4C /* FeedTableViewController.swift in Sources */,
 				DA201B6C1CEBE49500E7BD94 /* ProfileViewController.swift in Sources */,
 				DA201B4E1CE542D600E7BD94 /* ViewController.swift in Sources */,
 				DA201B4C1CE542D600E7BD94 /* AppDelegate.swift in Sources */,
