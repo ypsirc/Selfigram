@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FeedTableViewController: UITableViewController {
+class FeedTableViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     var words = ["Hello", "my", "name", "is", "Selfigram"]
     
@@ -65,16 +65,79 @@ class FeedTableViewController: UITableViewController {
         //let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
         // Configure the cell...
-        let cell = tableView.dequeueReusableCellWithIdentifier("postCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("postCell", forIndexPath: indexPath) as! SelfieCell
         
-        let post = posts[indexPath.row]
-        cell.imageView?.image = post.image
-        cell.textLabel?.text = post.comment
+        
+        let post = self.posts[indexPath.row]
+
+        cell.selfieImageView.image = post.image
+        cell.usernameLabel.text = post.user.username
+        cell.commentLabel.text = post.comment
+//      cell.imageView?.image = post.image
+//      cell.textLabel?.text = post.comment
         
         return cell
     }
  
+    @IBAction func cameraButtonPressed(sender: AnyObject) {
+        
+        
+        print("Camera Button Pressed!")
+        
+        
+        // 1: Create an ImagePickerController
+        let pickerController = UIImagePickerController()
+        
+        // 2: Self in this line refers to this View Controller
+        //    Setting the Delegate Property means you want to receive a message
+        //    from pickerController when a specific event is triggered.
+        pickerController.delegate = self
+        
+        if TARGET_OS_SIMULATOR == 1 {
+            // 3. We check if we are running on a Simulator
+            //    If so, we pick a photo from the simulator’s Photo Library
+            // We need to do this because the simulator does not have a camera
+            pickerController.sourceType = .PhotoLibrary
+        } else {
+            // 4. We check if we are running on an iPhone or iPad (ie: not a simulator)
+            //    If so, we open up the pickerController's Camera (Front Camera, for selfies!)
+            pickerController.sourceType = .Camera
+            pickerController.cameraDevice = .Front
+            pickerController.cameraCaptureMode = .Photo
+        }
+        
+        // Preset the pickerController on screen
+        self.presentViewController(pickerController, animated: true, completion: nil)
+    }
 
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        
+        // 1. When the delegate method is returned, it passes along a dictionary called info.
+        //    This dictionary contains multiple things that maybe useful to us.
+        //    We are getting an image from the UIImagePickerControllerOriginalImage key in that dictionary
+        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            
+            //2. We create a Post object from the image
+            let me = User(inputUserName: "danny", inputProfileImage: UIImage(named: "Grumpy-Cat")!)
+            let post = Post(inputImage: image, inputUser: me, inputComment: "My Selfie")
+            
+            //3. Add post to our posts array
+            //    Adds it to the very top of our array (and therefore our table, when we pi
+            posts.insert(post, atIndex: 0)
+            
+        }
+        
+        //4. We remember to dismiss the Image Picker from our screen.
+        dismissViewControllerAnimated(true, completion: nil)
+        
+        //5. Now that we have added a post, reload our table
+        tableView.reloadData()
+        
+    }
+
+    
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
