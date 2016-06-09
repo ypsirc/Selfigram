@@ -31,8 +31,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYW-dE-7a9">
-                                <rect key="frame" x="184" y="278" width="64" height="28"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYW-dE-7a9">
+                                <rect key="frame" x="210" y="300" width="54" height="30"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
                                     <action selector="cameraButtonPressed:" destination="CrG-NJ-xg8" eventType="touchUpInside" id="mML-QE-vRj"/>
@@ -43,8 +43,8 @@
                         <constraints>
                             <constraint firstItem="o3k-Gi-QLV" firstAttribute="top" secondItem="GgN-su-fVf" secondAttribute="bottom" constant="46" id="1FN-UP-AEl"/>
                             <constraint firstItem="o3k-Gi-QLV" firstAttribute="centerX" secondItem="9fd-qz-V3b" secondAttribute="centerX" id="3ga-WX-qzv"/>
-                            <constraint firstItem="NYW-dE-7a9" firstAttribute="top" secondItem="o3k-Gi-QLV" secondAttribute="bottom" constant="-17" id="62W-cS-omY"/>
-                            <constraint firstItem="o3k-Gi-QLV" firstAttribute="leading" secondItem="NYW-dE-7a9" secondAttribute="trailing" constant="-38" id="PZt-cX-ii4"/>
+                            <constraint firstItem="NYW-dE-7a9" firstAttribute="top" secondItem="o3k-Gi-QLV" secondAttribute="bottom" constant="5" id="62W-cS-omY"/>
+                            <constraint firstItem="o3k-Gi-QLV" firstAttribute="leading" secondItem="NYW-dE-7a9" secondAttribute="trailing" constant="-54" id="PZt-cX-ii4"/>
                             <constraint firstItem="o3k-Gi-QLV" firstAttribute="centerX" secondItem="NeR-0p-2Aq" secondAttribute="centerX" id="loW-5s-t3m"/>
                             <constraint firstItem="9fd-qz-V3b" firstAttribute="top" secondItem="o3k-Gi-QLV" secondAttribute="bottom" constant="30" id="wbm-Q7-MEh"/>
                         </constraints>
