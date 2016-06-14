@@ -20,6 +20,7 @@
 		DA3A69971CEE88DB001D2F4C /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A69961CEE88DB001D2F4C /* Post.swift */; };
 		DA3A69991CF51E9C001D2F4C /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A69981CF51E9C001D2F4C /* FeedTableViewController.swift */; };
 		DA3A69CF1CF864FD001D2F4C /* SelfieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A69CE1CF864FD001D2F4C /* SelfieCell.swift */; };
+		DA3A69D51D0A3A9F001D2F4C /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3A69D41D0A3A9F001D2F4C /* Activity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		DA3A69961CEE88DB001D2F4C /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		DA3A69981CF51E9C001D2F4C /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		DA3A69CE1CF864FD001D2F4C /* SelfieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieCell.swift; sourceTree = "<group>"; };
+		DA3A69D41D0A3A9F001D2F4C /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				DA201B4B1CE542D600E7BD94 /* AppDelegate.swift */,
 				DA201B4D1CE542D600E7BD94 /* ViewController.swift */,
 				DA201B4F1CE542D600E7BD94 /* Main.storyboard */,
+				DA3A69D41D0A3A9F001D2F4C /* Activity.swift */,
 				DA201B6B1CEBE49500E7BD94 /* ProfileViewController.swift */,
 				DA3A69941CEE8777001D2F4C /* User.swift */,
 				DA3A69961CEE88DB001D2F4C /* Post.swift */,
@@ -350,6 +353,7 @@
 				DA201B6C1CEBE49500E7BD94 /* ProfileViewController.swift in Sources */,
 				DA201B4E1CE542D600E7BD94 /* ViewController.swift in Sources */,
 				DA201B4C1CE542D600E7BD94 /* AppDelegate.swift in Sources */,
+				DA3A69D51D0A3A9F001D2F4C /* Activity.swift in Sources */,
 				DA3A69971CEE88DB001D2F4C /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

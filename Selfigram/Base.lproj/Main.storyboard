@@ -93,13 +93,27 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nd7-Gh-0bW">
+                                            <rect key="frame" x="562" y="266" width="23" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="9gw-Pj-Obh"/>
+                                                <constraint firstAttribute="width" constant="23" id="mbV-Eq-APw"/>
+                                            </constraints>
+                                            <state key="normal" image="hearts-off"/>
+                                            <state key="selected" image="hearts-on"/>
+                                            <connections>
+                                                <action selector="likeButtonClicked:" destination="tk1-3w-gRn" eventType="touchUpInside" id="Mlu-Vg-qe0"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="DZj-lP-a3Y" firstAttribute="leading" secondItem="O9W-Ow-jTk" secondAttribute="leadingMargin" id="KCf-eo-q9S"/>
                                         <constraint firstItem="5Sh-LU-GVd" firstAttribute="top" secondItem="O9W-Ow-jTk" secondAttribute="topMargin" id="Q4k-6i-zFt"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="5Sh-LU-GVd" secondAttribute="trailing" id="Swu-tJ-vf8"/>
                                         <constraint firstItem="DZj-lP-a3Y" firstAttribute="top" secondItem="lR9-33-tyc" secondAttribute="bottom" constant="8" id="dfa-eB-PLx"/>
+                                        <constraint firstItem="nd7-Gh-0bW" firstAttribute="top" secondItem="5Sh-LU-GVd" secondAttribute="bottom" constant="8" id="eqL-3d-mXN"/>
                                         <constraint firstItem="5Sh-LU-GVd" firstAttribute="leading" secondItem="O9W-Ow-jTk" secondAttribute="leadingMargin" id="lfC-lP-D73"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="nd7-Gh-0bW" secondAttribute="trailing" constant="7" id="mnw-oD-wVv"/>
                                         <constraint firstItem="lR9-33-tyc" firstAttribute="top" secondItem="5Sh-LU-GVd" secondAttribute="bottom" constant="8" id="oeC-RW-g03"/>
                                         <constraint firstItem="DZj-lP-a3Y" firstAttribute="leading" secondItem="O9W-Ow-jTk" secondAttribute="leadingMargin" id="r5i-X8-9mM"/>
                                         <constraint firstItem="lR9-33-tyc" firstAttribute="leading" secondItem="O9W-Ow-jTk" secondAttribute="leadingMargin" id="tdM-zN-zgM"/>
@@ -107,6 +121,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="commentLabel" destination="DZj-lP-a3Y" id="WP3-eP-O5V"/>
+                                    <outlet property="likeButton" destination="nd7-Gh-0bW" id="MKI-Rj-Qlv"/>
                                     <outlet property="selfieImageView" destination="5Sh-LU-GVd" id="Mve-Xm-3BS"/>
                                     <outlet property="usernameLabel" destination="lR9-33-tyc" id="LQv-9v-iLo"/>
                                 </connections>
@@ -248,6 +263,8 @@
         <image name="Activities" width="25" height="25"/>
         <image name="NewsFeed" width="25" height="25"/>
         <image name="Profile" width="25" height="25"/>
+        <image name="hearts-off" width="42" height="37"/>
+        <image name="hearts-on" width="42" height="37"/>
         <image name="placeholder" width="256" height="256"/>
     </resources>
 </document>

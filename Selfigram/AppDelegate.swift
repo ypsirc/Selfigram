@@ -18,7 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         Post.registerSubclass()
-        Parse.setApplicationId("gbjSQFSXfDhKxRwqpPyN5wGV2a2dFWINBBPfuyYs", clientKey: "WehS54gAdKFzPr3wLYjuDMgWUuTJpBunyej5iL6t")
+        Activity.registerSubclass()
+        
+        Parse.setApplicationId("ZOlS6FOiiSLf52E273Aeo2GCNExc5a0F0tPftmjI", clientKey: "XcvfY61gfyyxZCObodvYgLJIhTWd0a0aU0QeKZeb")
+
+
+        
         
 //        let testObject = PFObject(className: "TestObject")
 //        testObject["foo"] = "bar"
