@@ -20,6 +20,7 @@ class SelfieCell: UITableViewCell {
     
     @IBOutlet weak var likeButton: UIButton!
     
+    @IBOutlet weak var heartAnimationView: UIImageView!
     
     var post:Post? {
         didSet{
@@ -61,6 +62,29 @@ class SelfieCell: UITableViewCell {
                 
             }
         }
+    }
+    
+    func tapAnimation() {
+        
+        // set heartAnimationView to be very tiny and not hidden
+        self.heartAnimationView.transform = CGAffineTransformMakeScale(0, 0)
+        self.heartAnimationView.hidden = false
+        
+        //animation for 1 second, no delay
+        UIView.animateWithDuration(1.0, delay: 0, options: [], animations: { () -> Void in
+            
+            // during our animation change heartAnimationView to be 3X what it is on storyboard
+            self.heartAnimationView.transform = CGAffineTransformMakeScale(3, 3)
+            
+        }) { (success) -> Void in
+            
+            // when animation is complete set heartAnimationView to be hidden
+            self.heartAnimationView.hidden = true
+        }
+        
+        likeButtonClicked(likeButton)
+
+        
     }
     
     

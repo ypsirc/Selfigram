@@ -20,8 +20,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Post.registerSubclass()
         Activity.registerSubclass()
         
-        Parse.setApplicationId("ZOlS6FOiiSLf52E273Aeo2GCNExc5a0F0tPftmjI", clientKey: "XcvfY61gfyyxZCObodvYgLJIhTWd0a0aU0QeKZeb")
-
+        //Parse.setApplicationId("ZOlS6FOiiSLf52E273Aeo2GCNExc5a0F0tPftmjI", clientKey: "XcvfY61gfyyxZCObodvYgLJIhTWd0a0aU0QeKZeb")
+        
+        //Heroku Deployment:
+        let config = ParseClientConfiguration(block: {
+            (ParseMutableClientConfiguration) -> Void in
+            ParseMutableClientConfiguration.applicationId = "1062shaw";
+            ParseMutableClientConfiguration.clientKey = "hello999";
+            ParseMutableClientConfiguration.server = "https://selfigram-002.herokuapp.com/parse";
+        });
+        
+        Parse.initializeWithConfiguration(config);
 
         
         
