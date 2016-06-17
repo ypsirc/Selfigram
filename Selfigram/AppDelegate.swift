@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Activity.registerSubclass()
         
         //Parse.setApplicationId("ZOlS6FOiiSLf52E273Aeo2GCNExc5a0F0tPftmjI", clientKey: "XcvfY61gfyyxZCObodvYgLJIhTWd0a0aU0QeKZeb")
+        //Parse.setApplicationId("5CDeHX2xNhW11QZXr9AvtBbEQY0lft4jpUuMFt9g", clientKey: "SO1UFKR9k8RsLx1FsXzBjyI6IjsKxm2K0jcm48dG")
         
         //Heroku Deployment:
         let config = ParseClientConfiguration(block: {

@@ -493,7 +493,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D72E56DCB254499CC9DC92B6 /* Pods-Selfigram.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Selfigram/Info.plist;
@@ -508,7 +508,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 17BBA130099F198A455FEA3E /* Pods-Selfigram.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Selfigram/Info.plist;
